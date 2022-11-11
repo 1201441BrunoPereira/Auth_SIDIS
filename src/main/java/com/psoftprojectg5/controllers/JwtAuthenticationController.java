@@ -54,11 +54,4 @@ public class JwtAuthenticationController {
                 roles));
     }
 
-    @Operation(summary = "Get id by name")
-    @GetMapping(value = "/userId/{name}")
-    public Long getAllMyReviews(@PathVariable("name")final String name) {
-        return userRepository.getIdByUsername(name);
-    }
-
-
 }
